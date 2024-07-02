@@ -16,7 +16,7 @@ test("이용 약관에 동의하는 체크 박스를 클릭하면 회원가입 �
   expect(screen.getByRole("button", { name: "회원가입" })).toBeEnabled();
 });
 
-test("form의 접근 가능한 이름은 heading에서 입용한다", () => {
+test("form의 접근 가능한 이름은 heading에서 인용한다", () => {
   render(<Form />);
   expect(
     screen.getByRole("form", { name: "신규 계정 등록" })
