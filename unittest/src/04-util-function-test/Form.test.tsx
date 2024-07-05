@@ -123,3 +123,8 @@ describe("이전 배송지가 있는 경우", () => {
     );
   });
 });
+
+test("Snapshot: form이 표시된다", () => {
+  const { container } = render(<Form />);
+  expect(container).toMatchSnapshot();
+});
