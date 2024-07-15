@@ -23,7 +23,7 @@ export const ToastProvider = ({
     <ToastStateContext.Provider value={{ isShown, message, style }}>
       <ToastActionContext.Provider value={{ showToast, hideToast }}>
         {children}
-        {/* isShown が true になった時、表示される */}
+        {/* isShow이 true가 되면 표시 */}
         {isShown && <Toast message={message} style={style} />}
       </ToastActionContext.Provider>
     </ToastStateContext.Provider>
